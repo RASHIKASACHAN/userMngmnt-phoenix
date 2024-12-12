@@ -1,0 +1,6 @@
+<!-- Iterate over members to display user list -->
+<div *ngFor="let member of members">
+    <button mat-button (click)="openUserDetails(member.user)">
+      {{ member.user.firstName }} {{ member.user.lastName }}
+    </button>
+  </div>
